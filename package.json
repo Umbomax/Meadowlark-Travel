@@ -4,12 +4,19 @@
   "description": "",
   "main": "meadowlark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint meadowlark.js lib"
   },
   "author": "Ethan Brown <e@zepln.com>",
   "license": "(MIT OR GPL-3.0)",
   "dependencies": {
     "express": "^4.16.3",
     "express-handlebars": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "portfinder": "^1.0.32",
+    "puppeteer": "^22.0.0"
   }
 }
